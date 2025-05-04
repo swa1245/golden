@@ -1,0 +1,181 @@
+/* Navbar and Banner Fixes */
+
+/* Fix body padding */
+body {
+  padding-top: 0 !important;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Fix navbar positioning */
+.elegant-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+/* Hero Banner Fixes */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 500px;
+  overflow: hidden;
+  margin-top: 0;
+  z-index: 1;
+}
+
+/* Carousel Fixes */
+.carousel, .carousel-inner {
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Carousel Fade Transition Fixes */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity ease-out .7s;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  opacity: 0;
+}
+
+/* Fix carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  z-index: 10;
+}
+
+/* Our Impact Section Styling */
+.support-section {
+  position: relative;
+  background: #e4d9db; /* Enhanced light pink background */
+  padding: 60px 0;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(255, 146, 162, 0.1);
+}
+
+/* Add decorative elements to enhance the light pink background */
+.support-section::before,
+.support-section::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(173, 147, 151, 0.5) 0%, rgba(255, 240, 243, 0.2) 100%);
+  z-index: 0;
+}
+
+.support-section::before {
+  top: -150px;
+  right: -100px;
+}
+
+.support-section::after {
+  bottom: -150px;
+  left: -100px;
+}
+
+.support-indicators {
+  position: relative;
+  z-index: 5;
+}
+
+/* Ensure content is above the decorative elements */
+.support-section .carousel-inner,
+.support-section .organic-section-header,
+.support-section .carousel-item {
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhance the section header styling */
+.support-section .organic-section-header h2 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.support-section .organic-section-header .highlight {
+  color: var(--primary-color);
+}
+
+.support-indicators::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 120px;
+  height: 30px;
+  background-color: rgb(255, 37, 37);
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 2px 10px rgb(255, 255, 255);
+}
+
+.support-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.support-indicators .active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}

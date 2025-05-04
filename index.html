@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Golden Fiber</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel-fix.css" />
+  <link rel="stylesheet" href="footer-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Marcellus&family=Italiana&family=Gilda+Display&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="organic-theme">
+  <nav class="navbar navbar-expand-lg fixed-top elegant-nav">
+    <div class="container-fluid px-4">
+      <!-- Logo (Left) -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="A Golden Fiber Logo" class="logo-img" />
+        <span class="brand-text">Golden<span class="brand-accent">Fiber</span></span>
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation Links (Center) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><span>Home</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/shop.html"><span>Shop</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html"><span>About</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/why-us.html"><span>Why us?</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html"><span>Contact</span></a></li>
+        </ul>
+
+        <!-- Right Side Elements -->
+        <div class="nav-right-elements">
+          <!-- Search Bar - Elegant Minimal Design -->
+          <div class="search-container">
+            <div class="search-wrapper">
+              <input class="search-input" type="search" placeholder="Search..." aria-label="Search">
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <button class="search-clear" type="button">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Full-width Hero Banner Slider inspired by Two Brothers India Shop -->
+  <div class="hero-banner">
+    <div class="hero-side-elements left-element" data-aos="fade-right" data-aos-duration="1200">
+      <div class="organic-icon">
+        <i class="fas fa-leaf"></i>
+      </div>
+    </div>
+
+    <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators hero-indicators">
+        <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-image-container">
+            <img src="./images/poster.png" class="hero-image" alt="Organic Products">
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="hero-image-container">
+            <img src="./images/poster1.png" class="hero-image" alt="Organic Essentials">
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="hero-image-container">
+            <img src="./images/poster2.png" class="hero-image" alt="Premium Quality">
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="hero-image-container">
+            <img src="./images/poster3.png" class="hero-image" alt="Seasonal Offerings">
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroSlider"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroSlider"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <section class="about" data-aos="fade-up" data-aos-duration="1000">
+
+
+    <!-- <h2 class="section-title">Categories</h2> -->
+
+    <div class="categories">
+      <div class="category">
+        <div class="circle">
+          <a href="/tote-bag.html"><img src="./images/tote-bag.png" alt="Tote Bag" /></a>
+        </div>
+        <a href="/tote-bag.html">
+          <p>Tote Bag</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/pouches.html"><img src="./images/pouches.png" alt="Pouches" /></a>
+        </div>
+        <a href="/pouches.html">
+          <p>Pouches</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/binders.html"><img src="./images/binders.png" alt="Binders" /></a>
+        </div>
+        <a href="/binders.html">
+          <p>Binders</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/green-gifting.html"><img src="./images/green-gigting.png" alt="Green Gifting" /></a>
+        </div>
+        <a href="/green-gifting.html">
+          <p>Green Gifting</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/gift-hamper.html"><img src="./images/hamper.png" alt="Gift Hamper" /></a>
+        </div>
+        <a href="/gift-hamper.html">
+          <p>Gift Hamper</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <img src="./images/accessories.png" alt="Accessories" />
+        </div>
+        <a href="/accessories.html">
+          <p>Accessories</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/bottle-bag.html"><img src="./images/bottle-bag.png" alt="Bottle Bags" /></a>
+        </div>
+        <a href="/bottle-bag.html">
+          <p>Bottle Bags</p>
+        </a>
+      </div>
+      <div class="category">
+        <div class="circle">
+          <a href="/corporate-bag.html"><img src="./images/corparate-bag.png" alt="Corporate Bags" /></a>
+        </div>
+        <a href="/corporate-bag.html">
+          <p>Corporate Bags</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <p class="intro" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+    "A Golden Fiber" aims to contribute to a greener and more sustainable world
+    by assisting brands in adopting eco-friendly alternatives.
+  </p>
+  <hr class="divider" />
+
+  <div class="best-seller-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2 class="best-seller-title">★ MOST LOVED PRODUCTS ★</h2>
+
+      <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Slide (4 products) -->
+          <div class="carousel-item active">
+            <div class="product-slider-row">
+              <!-- Product Card 1 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product1.png" class="product-image" alt="Product 1">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">I Believe In Angels Frosty Morn 3002 15 Moda</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product2.png" class="product-image" alt="Product 2">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">I Believe In Angels Frosty Morn 3002 15 Moda #2</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product3.png" class="product-image" alt="Product 3">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Pink Color Organza Gift Hamper Bag</h3>
+                  <p class="product-price">Size: 14"x14"x4"</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product4.png" class="product-image" alt="Product 4">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Ivory Color Organza Gift Hamper Bag</h3>
+                  <p class="product-price">Size: 14"x14"x4"</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Slide (4 products) -->
+          <div class="carousel-item">
+            <div class="product-slider-row">
+              <!-- Product Card 5 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product5.png" class="product-image" alt="Product 5">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Natural Color Basket Jute Accessories</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 6 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product6.png" class="product-image" alt="Product 6">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Natural Color Basket Jute Accessories</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 7 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product7.png" class="product-image" alt="Product 7">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Natural Color Basket Jute Accessories</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+
+              <!-- Product Card 8 -->
+              <div class="product-item">
+                <div class="best-seller-badge">BEST SELLER</div>
+                <div class="product-image-wrapper">
+                  <img src="./images/product8.png" class="product-image" alt="Product 8">
+                  <div class="product-overlay"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lorem Ipsum is simply dummy text</h3>
+                  <p class="product-price">Size: Standard</p>
+                  <a href="" class="product-link">View Product</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="shop-all-link">
+        <a href="/shop.html" class="btn-shop-all">Shop All Products</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="supportCarousel" class="carousel slide support-section" data-bs-ride="carousel" data-aos="fade-up"
+    data-aos-duration="1000">
+    <div class="organic-section-header">
+      <h2 class="text-center">Our <span class="highlight">Impact</span></h2>
+      <div class="leaf-divider"><i class="fas fa-leaf"></i></div>
+    </div>
+
+    <div class="carousel-indicators support-indicators">
+      <button type="button" data-bs-target="#supportCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#supportCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#supportCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#supportCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner support-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="container-fluid support-container">
+          <div class="row align-items-center gy-5">
+
+            <!-- TEXT -->
+            <div class="col-lg-6">
+              <div class="support-content" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="support-title">Supporting Local<br /><span class="accent-text">Communities</span></h2>
+                <div class="organic-separator"></div>
+                <p class="support-text">
+                  By collaborating with local jute manufacturers, we actively contribute to the livelihoods of
+                  communities involved in jute production, fostering sustainable economic growth and preserving
+                  traditional craftsmanship.
+                </p>
+                <a href="why-us.html" class="btn organic-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="image-frame mx-auto">
+                <img src="images/comm1.png" class="img-fluid" alt="Community 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container-fluid support-container">
+          <div class="row align-items-center gy-5">
+
+            <!-- TEXT -->
+            <div class="col-lg-6">
+              <div class="support-content" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="support-title">Customizable Jute<br /><span class="accent-text">Essentials</span></h2>
+                <div class="organic-separator"></div>
+                <p class="support-text">
+                  Discover our range of stylish bags, accessories, and eco-friendly packaging solutions, all designed
+                  with both aesthetics and sustainability in mind. Each product can be customized to reflect your
+                  brand's unique identity.
+                </p>
+                <a href="why-us.html" class="btn organic-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="image-frame mx-auto">
+                <img src="images/comm2.png" class="img-fluid" alt="Customizable Jute Essentials" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="container-fluid support-container">
+          <div class="row align-items-center gy-5">
+
+            <!-- TEXT -->
+            <div class="col-lg-6">
+              <div class="support-content" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="support-title">Commitment to<br /><span class="accent-text">Sustainability</span></h2>
+                <div class="organic-separator"></div>
+                <p class="support-text">
+                  Sustainability drives everything we do. We're committed to minimizing our carbon footprint and
+                  championing responsible practices across our entire supply chain, from ethical material sourcing to
+                  eco-friendly manufacturing processes.
+                </p>
+                <a href="why-us.html" class="btn organic-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="image-frame mx-auto">
+                <img src="images/comm3.png" class="img-fluid" alt="Sustainable Practices" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="container-fluid support-container">
+          <div class="row align-items-center gy-5">
+
+            <!-- TEXT -->
+            <div class="col-lg-6">
+              <div class="support-content" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="support-title">Making a Difference<br /><span class="accent-text">Together</span></h2>
+                <div class="organic-separator"></div>
+                <p class="support-text">
+                  Join our transformative journey towards a greener planet. Every purchase and partnership with us
+                  represents a deliberate stride towards mitigating climate change and securing a sustainable future for
+                  generations to come.
+                </p>
+                <a href="why-us.html" class="btn organic-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="image-frame mx-auto">
+                <img src="images/comm4.png" class="img-fluid" alt="Community 4" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- add more .carousel-item slides as needed -->
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- Full-width Banner Section -->
+  <section class="full-width-banner" data-aos="fade-up" data-aos-duration="800">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h2>Sustainable Solutions for a Greener Tomorrow</h2>
+      <div class="banner-divider"></div>
+      <p>Join us in our mission to create beautiful, eco-friendly products that make a positive impact on our environment</p>
+      <div class="banner-buttons">
+        <a href="/products.html" class="btn banner-btn primary-btn">Our Products</a>
+        <a href="/contact.html" class="btn banner-btn secondary-btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer Design -->
+  <footer class="modern-footer">
+    <!-- Footer Top Section with Newsletter -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h3>Join Our Sustainable Journey</h3>
+            <p>Subscribe to receive updates on new products, special offers, and our environmental initiatives.</p>
+          </div>
+          <div class="newsletter-form">
+            <form action="#" method="post" class="subscribe-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-widgets">
+          <!-- About Widget -->
+          <div class="footer-widget about-widget">
+            <div class="footer-logo">
+              <img src="./images/logo.png" alt="Golden Fiber Logo">
+            </div>
+            <p class="about-text">A Golden Fiber is committed to creating sustainable jute products that combine
+              elegance with eco-consciousness, supporting local communities and reducing environmental impact.</p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/goldenfiberbyrayna/?igshid=MzRlODBiNWFlZA%3D%3D"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.etsy.com/shop/goldenfiberbyrayna" aria-label="Etsy"><i
+                  class="fa-brands fa-etsy"></i></a>
+              <a href="https://www.amazon.in/s?me=A1SY0LVCJWMYWG&marketplaceID=A21TJRUUN4KGV" aria-label="Amazon"><i
+                  class="fab fa-amazon"></i></a>
+              <a href="https://wa.me/919822091610" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links Widget -->
+          <div class="footer-widget links-widget">
+            <h4 class="widget-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+              <li><a href="/why-us.html"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+              <li><a href="/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Products Widget -->
+          <div class="footer-widget links-widget">
+            <h4 class="widget-title">Our Products</h4>
+            <ul class="footer-links two-column">
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Tote Bags</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Pouches</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Binders</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Green Gifting</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Gift Hampers</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Accessories</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Bottle Bags</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Bags</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Widget -->
+          <div class="footer-widget contact-widget">
+            <h4 class="widget-title">Contact Us</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text">Pune, Maharashtra, India</div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="text"><a href="tel:+919822091610">+91 9822091610</a></div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="text"><a href="mailto:goldenfiberbyrayna@gmail.com">goldenfiberbyrayna@gmail.com</a></div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <div class="text">Mon - Sat: 9:00 AM - 6:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; 2025 Golden Fiber | An initiative by <strong>RAYNA VENTURES</strong></p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- WhatsApp Button (Bottom-Left) -->
+  <a href="https://wa.me/919822091610" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon">
+  </a>
+
+  <!-- Scroll to Top Button (Bottom-Right) -->
+  <button onclick="scrollToTop()" class="scroll-top-btn" title="Go to top">
+    ⬆
+  </button>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
