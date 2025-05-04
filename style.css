@@ -175,7 +175,20 @@ section, .section-container {
 
 .elegant-nav .navbar-toggler:hover {
   color: var(--secondary-color);
-  transform: rotate(90deg);
+}
+
+.elegant-nav .menu-icon {
+  transition: all 0.3s ease;
+}
+
+.elegant-nav .navbar-toggler[aria-expanded="true"] .menu-icon:before {
+  content: "\f00d"; /* fa-times (X) icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.elegant-nav .navbar-toggler[aria-expanded="true"] {
+  transform: rotate(180deg);
 }
 
 /* Right Side Elements */
