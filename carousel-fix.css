@@ -30,6 +30,54 @@ body {
   z-index: 1;
 }
 
+/* Hero Content Styles */
+.hero-content {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 60%;
+  z-index: 5;
+  color: white;
+  text-align: left;
+}
+
+.hero-tag {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  max-width: 80%;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
 /* Carousel Fixes */
 .carousel, .carousel-inner {
   height: 100%;
@@ -94,6 +142,120 @@ body {
 
 .carousel-indicators {
   z-index: 10;
+}
+
+/* Button Styling */
+.hero-btn, .btn-primary-outline, .btn-secondary-outline {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+.btn-primary-outline {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-primary-outline:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-secondary-outline:hover {
+  background-color: white;
+  color: var(--text-color);
+}
+
+/* Mobile Responsive Fixes for Hero Banner */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: auto;
+    min-height: 400px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-image-container {
+    height: 450px;
+  }
+  
+  .hero-content {
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .hero-btn, .btn-primary-outline, .btn-secondary-outline {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+  }
+  
+  .hero-side-elements {
+    display: none; /* Hide decorative elements on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image-container {
+    height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .hero-tag {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%;
+  }
+  
+  .hero-btn, .btn-primary-outline, .btn-secondary-outline {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
 }
 
 /* Our Impact Section Styling */
